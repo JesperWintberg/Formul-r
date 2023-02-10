@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="tack.html" method="post" >
+
+        <h1> Test formulär </h1>
+
+        <label for="fnamn">För namn</label>
+        <input type="text" id="fnamn" name="fnamn">
+        <br>
+        <label for="enamn">Efternamn</label>
+        <input type="text" id="enamn" name="enamn">
+        <br>
+        <label for="email"> Email </label>
+        <input type="email" id="email" name="email">
+        <br>
+        <label for="password"> Lösenord </label>
+        <input type="password" id="password" name="password">
+
+        <h2> Är pluto en planet? </h2>
+
+        <label for="ja"> Ja</label>
+        <input type="radio" id="ja" name="ja">
+        <label for="Nej"> Nej </label>
+        <input type="radio" id="Nej" name="ja">
+
+        <h3> Vilka fordon äger du? </h3>
+
+        <label for="mängd"> Antal </label>
+        <input type="range" id="mängd" name="mängd" min="0" max="10" oninput="this.nextElementSibling.value=this.value"> 
+        <output> 5 </output>
+        <br>
+        <label for="Mcykel"> Motorcykel </label>
+        <input type="checkbox" id="Mcykel" name="Mcykel">
+        <label for="Bil"> Bil </label>
+        <input type="checkbox" id="Bil" name="Bil">
+        <label for="Båt"> Båt </label>
+        <input type="checkbox" id="Båt" name="Båt">
+
+        <br>
+
+        <h4> Hur gammal är du?</h4>
+        
+        <label for="Datum"> Datum </label>
+        <input type="datetime-local" id="Datum" name="Datum">
+        <br>
+        <label for="Ålder"> Ålder </label>
+        <input type="number" id="Ålder" name="Ålder">
+
+        <br>
+
+        <h5> Kön </h5>
+        
+        <select name="foo">
+            <option value="lista">
+                <p> Man</p>
+            </option>
+            <option value="lista">
+                <p> Kvinna </p>
+            </option>
+        </select>
+
+        <br>
+
+        <h6> Vad tyckte du om formuläret? </h6>
+
+        <textarea>
+
+        </textarea>
+
+        <br>
+        <br>
+        <input type="submit">
+
+    </form>
+</body>
+</html>
